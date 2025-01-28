@@ -1,17 +1,25 @@
 html {
-  width: 100%;
   font-family: Arial, sans-serif;
   color: white;
   background-image: url(../assets/975becd6-d0f7-4932-a9ec-a90ddc13bf32.jpg);
-  background-size: 100vh;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
 }
 
 nav {
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #014e79;
+  border: 3px #e6e6e6 solid;
+  border-radius: 5px;
+}
+
+#logo {
+margin-left: 20%;
 }
 
 .title_container {
@@ -21,11 +29,11 @@ nav {
 .button_container {
   display: flex;
   justify-content: flex-end;
-  height: 40%;
+  height: 60%;
 }
 
 h1 {
-  color: #46beef;
+  color: #fae690;
   margin: auto;
   font-size: 3rem;
 }
