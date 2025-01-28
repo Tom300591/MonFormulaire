@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Formulaire de contact</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Mon site</h1>
+        <div class="button_container">
+          <button id="" type="button">Accueil</button>
+          <button id="showForm" type="button">Afficher le formulaire</button>
+          <button id="" type="button">Contacts</button>
+          <button id="" type="button">Qui sommes nous?</button>
+        </div>
+    </nav>
+    </header>
+    
+    <form id="formulaire">
+      <div class="title_container"><h2>Formulaire de contact</h2></div>
+      
+      <fieldset id="infos">
+
+        <legend><h2>Informations</h2></legend><br>
+
+        <div id="div_nm">
+          <br />
+          <label for="name">Nom :</label>
+          <input
+            type="text"
+            id="name"
+            name="nom"
+            placeholder="Parker"
+            required
+          />
+        </div>
+
+        <div id="div_fnm">
+          <br />
+          <label for="firstname">Prenom :</label>
+          <input
+            type="text"
+            id="firstname"
+            name="prenom"
+            placeholder="Peter"
+            required
+          />
+        </div>
+
+        <div id="choiceStatut">
+
+          <label for="statut">Statut :</label>
+
+          <div>
+            <input
+              type="radio"
+              name="statut"
+              id="particulier"
+              required
+              checked
+            /><label class="statut" for="particulier">Particulier</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              name="statut"
+              id="professionnel"
+              required
+            /><label class="statut" for="professionel">Professionel</label>          
+          </div>
+        </div>
+
+        <div id="div_st">
+          <label for="societe">Société :</label
+          ><input
+            type="text"
+            name="societe"
+            id="societe"
+            placeholder="Nom de la société"
+            required
+          />
+        </div>
+
+      </fieldset>
+
+      <fieldset id="message">
+
+        <legend><h2>Message</h2></legend>
+
+        <div>
+          <label for="objet">Objet :</label>
+          <select type="text" name="objet" id="objet" required>
+            <option value="demande_de_contact">Demande de conact</option>
+            <option value="offre_d'emploi" selected>Offre d'emploi</option>
+            <option value="envoi_d'une_brochure_tarifaire">
+              Envoi d'une brochure tarifaire
+            </option>
+          </select>
+        </div>
+
+        <div>
+          <label for="email">Email :</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@mail.com"
+            required
+          />
+        </div>
+
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Message..."
+        ></textarea>
+
+        <button classe="submit" type="submit">Envoyer</button>
+
+      </fieldset>
+
+    </form>
+
+    <script src="../scripts/evenements.js" type="module"></script>
+  </body>
+</html>

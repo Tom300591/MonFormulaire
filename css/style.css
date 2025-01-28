@@ -1,0 +1,145 @@
+html {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url(../assets/975becd6-d0f7-4932-a9ec-a90ddc13bf32.jpg);
+    background-size: 100vh;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
+
+.title_container{
+    display: flex;
+}
+
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+h1{
+    color: #46beef;
+    margin: auto;
+    font-size: 3rem;
+}
+
+h2{
+    color: #46beef;
+    margin: auto;
+}
+
+form {
+    position:absolute;
+    top:8%;
+    left: 25%;
+    width: 50%;
+    overflow: hidden visible;
+    
+}
+
+div, textarea, button {
+    margin: 1% 0%;
+}
+
+
+fieldset {
+    padding: 2%;
+    border: 1px #e6e6e6 solid;
+    border-radius: 5px;
+    backdrop-filter: blur(15px);
+}
+
+label {
+    font-size: 1.1em;
+    margin-right: 1em;
+}
+
+#div_nm, #div_fnm, #div_st {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input, select {
+    flex-grow: 1;
+    font-size: 1em;
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 3px;
+    color: #014e79;
+    padding: 0.2%;
+}
+
+#choiceStatut div {
+    font-size: 0.8em;
+    margin-bottom: 2%;
+}
+
+input[type="radio"] {
+    margin-right: 1em;
+}
+
+#message {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#message textarea {
+    width: 95%;
+    font-size: 1em;
+    flex-grow: 0.9em;
+    border-radius: 5px;
+    border: 1px #014e79 solid;
+    padding: 1%;
+}
+
+button {
+      margin-right: .5rem;
+      font-weight: bold;
+    box-shadow:  1px 4px 10px #e46684;
+    border-radius: 50px;
+    width: 100px;
+    background-color: #c13a59;
+    color: #ff98b0;
+    padding: 0.7em 1em;
+    font-size: .7em;
+    border: 1px solid #c13a59;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0a2b4;
+    transition-duration: 0.5s;
+    color:#c13a59;
+}
+
+/*classes d'animations pour JavaScript*/
+
+.masque {
+    opacity: 0%;
+    margin-bottom: -4%;
+}
+
+.app {
+    opacity: 100%;
+    transition-duration: 0.5s;
+    margin-bottom: 0%;
+}
+
+.disp {
+    opacity: 0%;
+    transition-duration: 0.5s;
+    margin-bottom: -4%;
+}
+
+.show_form{
+    opacity:100%;
+}
