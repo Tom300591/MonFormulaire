@@ -28,8 +28,9 @@ formulaire.getElement("objet").addEventListener("change", () => { formulaire.isS
 
 formulaire.formulaireHtml.addEventListener('submit',
     (event) => {
-        event.preventDefault(); //pour l'exercice on ne désactive l'action par défaut du bouton submit
+        event.preventDefault(); //pour l'exercice on désactive l'action par défaut du bouton submit
         formulaire.affAnswers();
+        formulaire.formulaireHtml.reset();
     }
 )
 
